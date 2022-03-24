@@ -24,12 +24,34 @@
 
     main {
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
     }
 
     main > * {
       border: 1px solid red;
+      padding: 20px;
     }
+
+    h2 {
+      margin: 0;
+    }
+
+    .box1 {
+      flex-grow: 2;
+      /* flex-basis: 100%; */
+    }
+
+    .box2 {
+      flex-grow: 1;
+      /* flex-basis: 50%; */
+    }
+
+    .box3 {
+      flex-grow: 1;
+      /* flex-basis: 50%; */
+    }
+
+
   </style>
 </head>
 <body>
@@ -50,19 +72,21 @@
     </div>
     <div class="box3">
       <h2>Why Us</h2>
-      <p>Tutorials by industry experts</p>
-      <p>Peer &amp; expert code review</p>
-      <p>Coding exercises</p>
-      <p>Access to our GitHub repos</p>
-      <p>Community forum</p>
-      <p>Flashcard decks</p>
-      <p>New videos every week</p>
+      <p>
+        Tutorials by industry experts <br>
+        Peer &amp; expert code review <br>
+        Coding exercises <br>
+        Access to our GitHub repos <br>
+        Community forum <br>
+        Flashcard decks <br>
+        New videos every week
+      </p>
     </div>
   </main>
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Fakhry Fernanda</a>.
     </p>
   </footer>
 </body>
