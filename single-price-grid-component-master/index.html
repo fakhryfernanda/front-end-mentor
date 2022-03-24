@@ -30,7 +30,8 @@
 
     main > * {
       box-sizing: border-box;
-      padding: 20px;
+      padding: 50px;
+      font-family: sans-serif;
     }
 
     h2 {
@@ -43,14 +44,45 @@
       border-radius: 15px 15px 0 0;
     }
 
-    .box2 {
+    .box1 > h2 {
+      color: #4ABEBD;
+    }
+
+    .box1 > p:first-of-type {
+      color: #BFDF32;
+      font-weight: 700;
+    }
+
+    .box1 > p:nth-child(3),
+    .box1 > p:nth-child(4) {
+      color: gray;
+    }
+
+    .box2, .box3 {
       flex-basis: 50%;
+      color: white;
+    }
+
+    .box2 {
       background-color: #2BB3B1;
       border-bottom-left-radius: 15px;
     }
 
+    .box2 span {
+      font-size: 32px;
+      font-weight: 700;
+      vertical-align: middle;
+    }
+
+    .sign-up {
+      padding: 20px 0px;
+      background-color: #BFDF32;
+      font-size: 16px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
     .box3 {
-      flex-basis: 50%;
       background-color: #4ABEBD;
       border-bottom-right-radius: 15px;
     }
@@ -63,14 +95,12 @@
     <div class="box1">
       <h2>Join our community</h2>
       <p>30-day, hassle-free money back guarantee</p>
-      <p>
-        Gain access to our full library of tutorials along with expert code reviews. 
-        Perfect for any developers who are serious about honing their skills.
-      </p>  
+      <p>Gain access to our full library of tutorials along with expert code reviews.</p>
+      <p>Perfect for any developers who are serious about honing their skills.</p>  
     </div>
     <div class="box2">
       <h2>Monthly Subscription</h2>
-      <p>&dollar;29 per month</p>
+      <p><span>&dollar;29</span> per month</p>
       <p>Full access for less than &dollar;1 a day</p>
       <div class="sign-up">Sign Up</div>
     </div>
