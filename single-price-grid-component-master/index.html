@@ -25,10 +25,13 @@
     main {
       display: flex;
       flex-wrap: wrap;
+      border: 1px solid blue;
+      border-radius: 10px;
     }
 
     main > * {
-      border: 1px solid red;
+      box-sizing: border-box;
+      /* border: 1px solid red; */
       padding: 20px;
     }
 
@@ -37,18 +40,18 @@
     }
 
     .box1 {
-      flex-grow: 2;
-      /* flex-basis: 100%; */
+      /* flex-grow: 2; */
+      flex-basis: 100%;
     }
 
     .box2 {
-      flex-grow: 1;
-      /* flex-basis: 50%; */
+      /* flex-grow: 1; */
+      flex-basis: 50%;
     }
 
     .box3 {
-      flex-grow: 1;
-      /* flex-basis: 50%; */
+      /* flex-grow: 1; */
+      flex-basis: 50%;
     }
 
 
