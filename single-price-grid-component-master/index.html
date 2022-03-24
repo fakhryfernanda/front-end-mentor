@@ -14,9 +14,10 @@
     .attribution a { color: hsl(228, 45%, 44%); }
 
     body {
+      background-color: #E6EFF6;
       height: 100vh;
       margin: 0 auto;
-      padding: 0 200px;
+      padding: 0 30%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -25,13 +26,10 @@
     main {
       display: flex;
       flex-wrap: wrap;
-      border: 1px solid blue;
-      border-radius: 10px;
     }
 
     main > * {
       box-sizing: border-box;
-      /* border: 1px solid red; */
       padding: 20px;
     }
 
@@ -40,18 +38,21 @@
     }
 
     .box1 {
-      /* flex-grow: 2; */
       flex-basis: 100%;
+      background-color: #FFF;
+      border-radius: 15px 15px 0 0;
     }
 
     .box2 {
-      /* flex-grow: 1; */
       flex-basis: 50%;
+      background-color: #2BB3B1;
+      border-bottom-left-radius: 15px;
     }
 
     .box3 {
-      /* flex-grow: 1; */
       flex-basis: 50%;
+      background-color: #4ABEBD;
+      border-bottom-right-radius: 15px;
     }
 
 
