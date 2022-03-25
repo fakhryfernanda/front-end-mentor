@@ -10,8 +10,87 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; margin-top: 30px; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+    body {
+      height: 100vh;
+      margin: 0 auto;
+      padding: 0 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #ff7978;
+      background-image: url(./images/bg-intro-desktop.png);
+    }
+
+    body > * {
+      font-family: sans-serif;
+    }
+
+    main {
+      display: flex;
+      align-items: center;
+    }
+
+    .container {
+      box-sizing: border-box;
+      flex-basis: 50%;
+    }
+
+    .hello-text {
+      color: white;
+    }
+
+    .try-it {
+      padding: 20px 50px;
+      color: white;
+      text-align: center;
+      margin-bottom: 30px;
+      background-color: #5D54A3;
+      border-radius: 10px;
+      box-shadow: 5px 5px #888;
+    }
+
+    .form {
+      padding: 40px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 5px 5px #888;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .form > * {
+      display: block;
+    }
+
+    .form > input {
+      padding: 20px 40px;
+      border: 1px solid grey;
+      border-radius: 10px;
+    }
+
+    .submit-btn {
+      color: white;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 20px 0;
+      background-color: #37CC8A;
+      border-radius: 10px;
+      box-shadow: 2px 2px darkgreen;
+    }
+
+    .form > p:last-child {
+      text-align: center;
+    }
+
+    .form a {
+      font-weight: bold;
+      text-decoration: none;
+      color: orange;
+    }
   </style>
 </head>
 <body>
@@ -26,15 +105,15 @@
     </div>
     <div class="container">
       <div class="try-it">
-        Try it free 7 days then $20/mo. thereafter
+        <b>Try it free 7 days</b> then $20/mo. thereafter
       </div>
       <div class="form">
-        <input type="text" name="first_name">
-        <input type="text" name="last_name">
-        <input type="email" name="email">
-        <input type="password" name="password">
-        <button type="submit">Claim your free trial</button>
-        <p>By clicking the button, you are agreeing to our Terms and Services</p>
+        <input type="text" name="first_name" placeholder="First Name">
+        <input type="text" name="last_name" placeholder="Last Name">
+        <input type="email" name="email" placeholder="Email Address">
+        <input type="password" name="password" placeholder="Password">
+        <div class="submit-btn">Claim your free trial</div>
+        <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
       </div>
     </div>
   </main>
